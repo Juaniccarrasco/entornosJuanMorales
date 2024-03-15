@@ -15,9 +15,12 @@ fun main(args: Array<String>) {
     println(Arrays.toString(sumaFilas))
     println("La suma de las columnas es")
     println(Arrays.toString(sumaColum))
-
+    println( totalFilasYColumnas(sumaFilas,sumaColum))
 
 }
+
+private fun totalFilasYColumnas(sumaFilas: Array<Int>, sumaColum: Array<Int>):String{
+    return (sumaFilas.size+sumaColum.size).toString()}
 
 private fun ImprimeMatriz(matriz: Array<Array<Int>>) {
     for (fila in matriz.indices) {
@@ -56,6 +59,7 @@ private fun sumaFilas(m: Array<Array<Int>>, sumaFilas: Array<Int>) {
         fila++
     }
 }
+
 
 
 
